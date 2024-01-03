@@ -7,10 +7,12 @@
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",
-                "${file}",
+                "${workspaceFolder}/SimulateStateSpace/main.cpp",
+                "${workspaceFolder}/SimulateStateSpace/SimulateStateSpace.cpp",
                 "-o",
                 "${fileDirname}/${fileBasenameNoExtension}",
-                "-I${workspaceFolder}/Libraries/eigen-3.4.0"
+                "-I${workspaceFolder}/Libraries/eigen-3.4.0",
+                "-I${workspaceFolder}/SimulateStateSpace"
             ],
             "options": {
                 "cwd": "${fileDirname}"
